@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="..." width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#edu">Education</a></li>
+                    <li><a href="#sk">Skills</a></li>
+                    <li><a href="">Experience</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <p>Hi, I'm</p>
+                    <h1>Priyansi Narendra Chogale</h1>
+                    <p>My objective is to expand my learning, knowledge and skills. I Want to secure a good position in reputed organization.</p>
+                    <a href="" class="btn">Know more &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/profile.jpg" alt="...">
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!--Education-->
+        <div class="small-container" id="edu">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/education.jpg" alt="...">
+                </div>
+                <div class="col-2">
+                    <div class="education">
+                    <h3>Education</h3>
+                    <hr class="line">
+                    <h4>Thadomal Shahani Engineering College</h4>
+                    <p>Bachelor of Engineering, BE - Information Technology</p>
+                    <small>2019 - 2023</small>
+                    <h4>Shri. T. P. Bhatia Jr. College of Science</h4>
+                    <p>HSC - Computer Science</p>
+                    <small>2017 - 2019</small>
+                    <h4>Dr. T. R. Naravane Vidyalaya</h4>
+                    <p>SSC</p>
+                    <small>2011 - 2017</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Skills-->
+        <div class="small-container" id="sk">
+            <div class="row">
+            <div class="col-2">
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <hr class="line">
+                    <div class="progress-bar">
+                    <h4>C Programming</h4>
+                    <hr width="60%" ><hr class="white" width="40%">
+                    <h4>C++ Programming</h4>
+                    <hr width="70%" ><hr class="white" width="30%">
+                    <h4>Python</h4>
+                    <hr width="70%" ><hr class="white" width="30%">
+                    <h4>HTML</h4>
+                    <hr width="75%" ><hr class="white" width="25%">
+                    <h4>CSS</h4>
+                    <hr width="60%" ><hr class="white" width="40%">
+                    <h4>MySQL</h4>
+                    <hr width="65%" ><hr class="white" width="35%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <img src="images/skills.jpg" alt="" class="sk-img">
+            </div>
+            </div>
+        </div>
+
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            MenuItems.style.maxHeight = "0px";
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px"){
+                    MenuItems.style.maxHeight = "210px";
+                }
+                else{
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+</body>
+</html>
